@@ -42,7 +42,7 @@ async function weather(word) {
 
     wind.innerText = data.current.wind_kph;
     wind.innerText += ' kph';
-    icon.setAttribute('src', '//cdn.weatherapi.com/weather/64x64/night/143.png');
+    icon.setAttribute('src', `${data.current.condition.icon}`);
 
 
 }
